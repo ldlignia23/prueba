@@ -117,18 +117,18 @@ export default{
     },
     methods:{
         async listar(){
-            const res=await axios.get('/registros');
+            const res=await axios.get('api/registros');
             this.personas=res.data;
         },
          async eliminar(id){
-            const res=await axios.delete('/registros/'+id);
+            const res=await axios.delete('api/registros/'+id);
             this.listar();
         },
         async guardar(id){
             if(this.modificar){
-                const res=await axios.put('/registros/'+this.id,this.persona);
+                const res=await axios.put('api/registros/'+this.id,this.persona);
             }else{
-                const res=await axios.post('/registros', this.persona);
+                const res=await axios.post('api/registros', this.persona);
             }
             this.cerrarModal();
             this.listar();

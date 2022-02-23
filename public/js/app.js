@@ -5510,7 +5510,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return axios.get('/registros');
+                return axios.get('api/registros');
 
               case 2:
                 res = _context.sent;
@@ -5534,7 +5534,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return axios["delete"]('/registros/' + id);
+                return axios["delete"]('api/registros/' + id);
 
               case 2:
                 res = _context2.sent;
@@ -5565,7 +5565,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
 
                 _context3.next = 3;
-                return axios.put('/registros/' + _this3.id, _this3.persona);
+                return axios.put('api/registros/' + _this3.id, _this3.persona);
 
               case 3:
                 res = _context3.sent;
@@ -5574,7 +5574,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 6:
                 _context3.next = 8;
-                return axios.post('/registros', _this3.persona);
+                return axios.post('api/registros', _this3.persona);
 
               case 8:
                 _res = _context3.sent;
@@ -5686,7 +5686,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return axios.get('/registros');
+                return axios.get('api/registros');
 
               case 2:
                 res = _context.sent;
@@ -10826,7 +10826,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.mostrar{\n    display: list-item;\n    opacity: 98%;\n    background: rgb(77, 65, 65);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.mostrar{\r\n    display: list-item;\r\n    opacity: 98%;\r\n    background: rgb(77, 65, 65);\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

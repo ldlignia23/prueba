@@ -23,5 +23,3 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\PersonaController::class, 'persAdd'])->name('registro');
 Route::get('/filtrado', [App\Http\Controllers\PersonaController::class, 'persList'])->name('filtrado');
-
-Route::apiresource('/registros',PersonaController::class);

@@ -32,7 +32,7 @@ export default{
     },
     methods:{
         async listar(){
-            const res=await axios.get('/registros');
+            const res=await axios.get('api/registros');
             this.personas=res.data;
         },
     },

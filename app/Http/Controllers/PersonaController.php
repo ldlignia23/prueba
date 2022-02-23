@@ -12,6 +12,10 @@ class PersonaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     //IMPLEMENTACIÓN DE LOS MÉTODOS PARA EL CRUD
+
+    //El metodo index es el que devuelve el listado json ejemplo:http://127.0.0.1:8000/api/registros
     public function index()
     {
         //
